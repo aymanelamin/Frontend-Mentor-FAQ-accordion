@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link href="style.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | FAQ accordion</title>
+
+  
+</head>
+<body>
+
+  <div id="background-container">
+    <img id="background-image-desktop" src="assets/images/background-pattern-desktop.svg" alt="background-image">
+    <img id="background-image-mobile" src="assets/images/background-pattern-mobile.svg" alt="background-image">
+  </div>
+  <div id="main-container">
+    <div id="main-heading-container">
+      <img src="assets/images/icon-star.svg" alt="icon-star" id="icon-star">
+      <h1 id="my-heading">FAQs</h1>
+    </div>
+
+    <div class="item" id="item1">
+      <div class="question-container" id="question-container1">
+        <h2 class="question" id="first-question" onclick="plus1()">What is Frontend Mentor, and how will it help me?</h2>
+        <img class="plus-icon"  id="plus-icon1" src="assets/images/icon-plus.svg" alt="plus-icon" onclick="plus1()">
+        <img class="minus-icon"  id="minus-icon1" src="assets/images/icon-minus.svg" alt="minus-icon" onclick="minus1()">
+      </div>
+      <p class="answer" id="first-answer">
+        Frontend Mentor offers realistic coding challenges to help developers improve their 
+        frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
+        all levels and ideal for portfolio building.
+      </p>
+    </div>
+    <hr>
+
+    <div class="item" id="item2">
+      <div class="question-container" id="question-container2">
+        <h2 class="question" id="second-question" onclick="plus2()">Is Frontend Mentor free?</h2>
+        <img class="plus-icon"  id="plus-icon2" src="assets/images/icon-plus.svg" alt="plus-icon" onclick="plus2()">
+        <img class="minus-icon"  id="minus-icon2" src="assets/images/icon-minus.svg" alt="minus-icon" onclick="minus2()">
+      </div>
+      <p class="answer" id="second-answer" >
+        Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
+        option providing access to a range of projects suitable for all skill levels.
+      </p>
+    </div>
+    <hr>
+
+    <div class="item" id="item3">
+    <div class="question-container" id="question-container3">
+      <h2 class="question" id="third-question" onclick="plus3()">Can I use Frontend Mentor projects in my portfolio?</h2>
+      <img class="plus-icon"  id="plus-icon3" src="assets/images/icon-plus.svg" alt="plus-icon" onclick="plus3()">
+      <img class="minus-icon"  id="minus-icon3" src="assets/images/icon-minus.svg" alt="minus-icon" onclick="minus3()">
+    </div>
+    <p class="answer" id="third-answer">
+      Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+      way to showcase your skills to potential employers!
+    </p>
+    </div>
+    <hr>
+
+    <div class="item" id="item4">
+      <div class="question-container" id="question-container4">
+        <h2 class="question" id="forth-question" onclick="plus4()">How can I get help if I'm stuck on a challenge?</h2>
+        <img class="plus-icon"  id="plus-icon4" src="assets/images/icon-plus.svg" alt="plus-icon" onclick="plus4()">
+        <img class="minus-icon"  id="minus-icon4" src="assets/images/icon-minus.svg" alt="minus-icon" onclick="minus4()">
+      </div>
+      <p class="answer" id="forth-answer">
+        The best place to get help is inside Frontend Mentor's Discord community. There's a help 
+        channel where you can ask questions and seek support from other community members.
+      </p>
+    </div>
+    
+
+
+  </div>
+
+  <script src="main.js" ></script>
+
+</body>
+</html>
